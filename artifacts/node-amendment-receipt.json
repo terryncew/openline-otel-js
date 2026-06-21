@@ -1,0 +1,20 @@
+{
+  "kind": "amendment_receipt",
+  "receipt_version": "0.1",
+  "algorithm_id": "olp-otel-js-receipt-0.1",
+  "canonicalization_id": "olp-canonical-json-int-v1",
+  "spec_uri": "https://github.com/terryncew/olp-wire-canon",
+  "trace_id": "0123456789abcdef0123456789abcdef",
+  "attestation": "self",
+  "capture_status": "provisional",
+  "amendment_sequence": 1,
+  "previous_receipt_hash": "e75d9c409755d8fcfc616d24e09f7c08dc6ad50400bf65ec9e793006a9ad43d0",
+  "late_span_hash": "0cdcdbd303929f9112f1dbade026bd568cdd9b5f5976cd324086ea4db97c9088",
+  "reason": "span_arrived_after_provisional_seal",
+  "payload_hash": "47a57ad1917297d38fcb6161d56f7f1a8982dd10bec2a60d02fdb4912bfde7df",
+  "signature": {
+    "algorithm": "Ed25519",
+    "public_key": "2152f8d19b791d24453242e15f2eab6cb7cffa7b6a5ed30097960e069881db12",
+    "value": "6af54266021bc0ee3c43d63fec2f12b709d78f005708a955e44bf764ee59e73fccf5f75682e2cf236f4d5181d938aa16669ea68825d91e30e7f56dd30b88330f"
+  }
+}

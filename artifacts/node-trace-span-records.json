@@ -1,0 +1,34 @@
+[
+  {
+    "trace_id": "0123456789abcdef0123456789abcdef",
+    "span_id": "1000000000000001",
+    "parent_span_id": null,
+    "name": "agent.run",
+    "kind": 1,
+    "start_time_unix_nano": {
+      "$int": "1780000000123456789"
+    },
+    "end_time_unix_nano": {
+      "$int": "1780000000223456789"
+    },
+    "status": {
+      "code": 1,
+      "description": null
+    },
+    "attributes": {
+      "a_first": "café-gpt",
+      "z_last": 7
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+      "service.name": "café-gpt"
+    },
+    "instrumentation_scope": {
+      "name": "openline-test",
+      "version": "0.1",
+      "schema_url": null,
+      "attributes": {}
+    }
+  }
+]

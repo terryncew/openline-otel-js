@@ -1,0 +1,35 @@
+{
+  "kind": "coherence_input_disclosure",
+  "disclosure_version": "0.1",
+  "trace_id": "0123456789abcdef0123456789abcdef",
+  "semantic_graph": {
+    "claims": [
+      {
+        "content_hash": "d8a4a5f0ddffd53a399b03a14a3bfe96804538c0171dd6de24720705e85fd545",
+        "id": "claim_1",
+        "material": true
+      }
+    ],
+    "evidence": [
+      {
+        "content_hash": "c6d05cda30d1c44d28295aaf7d4d875ac51f4c5726e6838498e881858b391def",
+        "id": "evidence_1",
+        "observed": true
+      }
+    ],
+    "relations": [
+      {
+        "dst": "claim_1",
+        "relation_type": "supports",
+        "src": "evidence_1"
+      }
+    ]
+  },
+  "signal_schema_id": "cole-input-micros-v1",
+  "signals": [
+    {
+      "sequence": 0,
+      "value_micros": 750000
+    }
+  ]
+}
