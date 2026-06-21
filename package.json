@@ -1,0 +1,45 @@
+{
+  "name": "@openline/otel-js",
+  "version": "0.1.0-draft",
+  "description": "Portable signed OpenLine receipts from OpenTelemetry JavaScript spans",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md",
+    "REPORT.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:real-sdk": "node --test integration/real-sdk.test.mjs",
+    "generate": "node scripts/generate-conformance.mjs",
+    "verify:python": "python scripts/verify-with-python.py",
+    "conformance": "npm run test && npm run generate && npm run verify:python"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@opentelemetry/api": ">=1.8.0 <2",
+    "@opentelemetry/sdk-trace-base": ">=1.25.0 <3"
+  },
+  "peerDependenciesMeta": {
+    "@opentelemetry/api": {
+      "optional": true
+    },
+    "@opentelemetry/sdk-trace-base": {
+      "optional": true
+    }
+  },
+  "license": "MIT"
+}
